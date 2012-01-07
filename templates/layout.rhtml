@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+		<title><%= title %></title>
+	</head>
+	<body>
+		<div class="site">
+			<div class="title">
+				<a href="/"><h2>Lijin's</h2></a>
+				<a class="extra" href="/">Home</a>
+				<a class="extra" href="/archives">Archives</a>
+				<a class="extra" href="/about">About</a>
+			</div>
+
+			<section>
+			<%= yield %> 
+			</section>
+			<div class="footer">
+				powered by <a href="http://cloudhead.io/toto">toto</a>
+			</div>
+		</div>
+	</body>
+</html>
+
